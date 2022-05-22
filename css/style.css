@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Balthazar&family=Courgette&family=Noto+Sans+Myanmar:wght@300;400&family=Roboto+Mono:wght@300&family=Sora:wght@200;300&display=swap');
+@font-face {
+    font-family: 'EdoFont';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Edo'), url('../images/edo.woff') format('woff');
+}
+               
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mm_font{
+    font-family: 'Noto Sans Myanmar', sans-serif;
+}
+.code{
+    font-family: 'Roboto Mono', monospace;
+}
+.logo_title{
+    font-family: 'EdoFont', sans-serif;                                    
+}
+.large{
+    font-size: 4rem;
+}
+.studio{
+    font-family: 'Sora', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+.content-list{
+    list-style-type: circle;
+}
+.content-img{
+    border: 2px solid navy;
+}
+a{
+    text-decoration: none;
+}
+header{
+    transition: background-color 0.3s ease-in-out;
+}
+aside,.headerColor{
+    background: #1a2451;
+}
+
+.logo_color{
+    color: #1a2451;
+}
+
+nav{
+    padding: 0.5rem 0;
+}
+.navContainer{
+    padding: 0 5px;
+}
+.navSub{
+    display: flex;
+    column-gap: 2rem;
+}
+.navList{
+    padding: 5px;
+}
+.navList:hover{
+    transform: scale(1.1);
+}
+
+.activate{
+    border-bottom: 4px solid gold;
+}
+.mActivate{
+    background-color: gold;
+    border-radius: 2px;
+    color: #1a2451;
+}
+header.headerColor .navItem{
+    color: white;
+}
+.blur{
+    filter: blur(5px);
+}
+
+.navItem{
+    color: #1a2451;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav_close{
+    display: none;
+}
+.navIcon{
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: whitesmoke;
+}
+
+aside, .mobileNav{
+    top: 0;
+    right: -100%;
+    transition: all 0.4s;
+    width: 50%;
+}
+.asideShow{
+    right: 0;
+}
+.asideMenu{
+    position: absolute;
+    top: 6rem;
+    width: 100%;
+}
+.asideOff{
+    position: absolute;
+    top: 1em; right: 0.5em;
+}
+
+.navItem{
+    display: block;
+    /* padding-right: 5rem; */
+}
+menu{
+    margin: 5px;
+    max-width: 100%;
+    position: relative;
+}
+
+#Home{
+    background-image: url('../images/twodigits_01.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+}
+#Home::after{
+    content: "";
+    background-color: lightgray;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    opacity: 0.2;
+    z-index: 0;
+}
+.home_content{
+    z-index: 100;
+    background: #1a2451;
+    padding: 10px;
+    border-radius: 10px;
+}
+.home_icon{
+    border-radius: 100%;
+    width: 80px;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+#Contact{
+    min-height: 90vh;
+
+}
+
+.content{
+    padding-top: 5em;
+}
+.content > h1{
+    margin-bottom: 1em;
+}
+.row-img{
+    max-width: 80%;
+    display: block;
+    margin: auto;
+}
+.logo-img{
+    max-width: 70%;
+}
+.fit{
+    width: fit-content;
+}
+.svc{
+    row-gap: 8px;
+}
+.form-container{
+    max-width: 80%;
+}
+.scrollBtn{
+    position: fixed;
+    bottom: -100%;
+    right: 1.5rem;
+    background: #1a2451;
+    border-radius: 5px;
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.scrollBtn:hover{
+    opacity: 1;
+}
+
+
+@media screen and (max-width:768px) {
+    .logo-img{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    aside{
+        width: 70%;
+    }
+}
